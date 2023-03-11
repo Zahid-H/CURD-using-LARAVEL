@@ -25,5 +25,5 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/employees', [EmployeeController::class,'index'] )->name('employees.index');
+Route::get('/employees', [EmployeeController::class,'index'] )->name('employees.index'); #Here name('employees.index') is from routing name to go to other pages
 Route::get('/employees/create', [EmployeeController::class,'create'] )->name('employees.create');
