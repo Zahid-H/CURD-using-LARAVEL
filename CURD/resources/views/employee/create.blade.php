@@ -22,16 +22,43 @@
                     <a href="{{ route('employees.index') }}" class="btn btn-primary">Back</a>
                 </div>
             </div>
-            <div class="card border-0 shadow-lg">
-                <div class="card-body">
-                    
+            <form action="">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body">
+                        <div  class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Enter name" class="form-control">
+                            
+                        </div>
+                        <div  class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" name="email" id="email" placeholder="Enter Email" class="form-control">
+                        </div>
+                        
+                        <div  class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter address" class="form-control"></textarea>
+                        </div>
+                        <div  class="mb-3">
+                            <label for="image"></label>
+                            <input type="file" name="image">
+                            
+                        </div>
+                    </div>
+                
                 </div>
+                <button class="btn btn-primary mt-3">Save Employee</button>
 
 
-            </div>
+            </form>
+
 
         </div>
 
     
 </body>
 </html>
+
+
+
+
